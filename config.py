@@ -16,7 +16,7 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    START_PIC   = os.environ.get("START_PIC", "https://www.pixelstalk.net/wp-content/uploads/images6/Sasuke-Wallpaper-Desktop.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5380609667').split()]
     FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'animelibraryn4').split(',')
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
